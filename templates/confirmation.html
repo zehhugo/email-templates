@@ -14,7 +14,7 @@
             <div style="background:#333333; border-radius:8px; padding:30px; margin-bottom:30px;">
                 <h2 style="color:#ff8c00; font-size:28px; margin:0 0 20px 0; font-weight:bold;">Confirme seu Email</h2>
                 <p style="font-size:16px; color:#cccccc; margin:0 0 25px 0;">Para começar a criar visualizações AR incríveis com energia solar, confirme seu endereço de email clicando no botão abaixo:</p>
-                <a href="{{ .ConfirmationURL }}" style="display:inline-block; background:linear-gradient(45deg, #ff8c00 0%, #ffa500 100%); color:#ffffff; padding:15px 40px; text-decoration:none; border-radius:50px; font-weight:bold; font-size:16px; box-shadow:0 4px 15px rgba(255,140,0,0.3);">🚀 Confirmar Email</a>
+                <a href="{{ .SiteURL }}/auth/confirm?token={{ .Token }}&type={{ .Type }}" style="display:inline-block; background:linear-gradient(45deg, #ff8c00 0%, #ffa500 100%); color:#ffffff; padding:15px 40px; text-decoration:none; border-radius:50px; font-weight:bold; font-size:16px; box-shadow:0 4px 15px rgba(255,140,0,0.3);">🚀 Confirmar Email</a>
             </div>
             <div style="border-top:1px solid #444444; padding-top:25px; color:#888888; font-size:14px;">
                 <p style="margin:0 0 10px 0;">Se você não criou esta conta, pode ignorar este email com segurança.</p>
