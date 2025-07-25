@@ -21,26 +21,8 @@
                    🚀 Confirmar Email
                 </a>
                 
-                <!-- Debug: Mostrar todas as variáveis disponíveis -->
-                <div style="font-size:10px; color:#666666; margin:20px 0; padding:10px; background:#222; border-radius:4px; font-family:monospace; text-align:left;">
-                    <strong>Debug Info:</strong><br>
-                    SiteURL: {{ .SiteURL }}<br>
-                    ConfirmationURL: {{ .ConfirmationURL }}<br>
-                    Email: {{ .Email }}<br>
-                    Token: {{ .Token }}<br>
-                    {{- if .Type }}
-                    Type: {{ .Type }}<br>
-                    {{- end }}
-                    {{- if .RedirectTo }}
-                    RedirectTo: {{ .RedirectTo }}<br>
-                    {{- end }}
-                    {{- if .Data }}
-                    Data: {{ .Data }}<br>
-                    {{- end }}
-                </div>
-                
                 <!-- Fallback manual case o botão não funcione -->
-                <p style="font-size:12px; color:#888888; margin:10px 0 0 0;">
+                <p style="font-size:12px; color:#888888; margin:20px 0 0 0;">
                     Se o botão não funcionar, copie e cole este link no seu navegador:<br>
                     <span style="color:#ff8c00; word-break:break-all; font-family: monospace;">{{ .ConfirmationURL }}</span>
                 </p>
